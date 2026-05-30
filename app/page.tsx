@@ -1,65 +1,248 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* Navbar */}
+      <nav className="navbar">
+        <div className="container navContent">
+          <div className="logo">KRYOTO</div>
+
+          <div className="navLinks">
+            <a href="#features">Features</a>
+            <a href="#workflow">Workflow</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero */}
+      <section className="hero">
+        <div className="container">
+
+          <span className="badge">
+            AI Automation For Ecommerce Businesses
+          </span>
+
+          <h1>
+            Automate Customer Support Across Every Channel
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p>
+            Kryoto helps ecommerce brands reduce support workload with AI
+            automation across WhatsApp, Instagram, Email and Live Chat.
           </p>
+
+          <div className="heroButtons">
+            <a
+              href="mailto:aditya@kryoto.in"
+              className="btn"
+            >
+              Book Free Demo
+            </a>
+
+            <a
+              href="#features"
+              className="btn secondary"
+            >
+              Explore Features
+            </a>
+          </div>
+
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Stats */}
+      <section>
+        <div className="container">
+          <div className="stats">
+
+            <div className="card">
+              <h2>80%</h2>
+              <p>Support Queries Automated</p>
+            </div>
+
+            <div className="card">
+              <h2>24/7</h2>
+              <p>Instant Customer Responses</p>
+            </div>
+
+            <div className="card">
+              <h2>4+</h2>
+              <p>Support Channels Connected</p>
+            </div>
+
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Problem */}
+      <section>
+        <div className="container center">
+
+          <h2>Support Is Broken</h2>
+
+          <p className="sectionText">
+            Ecommerce businesses spend hours answering the same questions
+            about shipping, refunds, returns and order tracking.
+          </p>
+
+          <div className="featuresGrid">
+
+            <div className="card">
+              <h3>Repeated Questions</h3>
+              <p>
+                Customers ask the same support questions every day.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Slow Responses</h3>
+              <p>
+                Manual replies delay customer experience.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Multiple Platforms</h3>
+              <p>
+                Support is scattered across WhatsApp, Email and Instagram.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section id="features">
+        <div className="container">
+
+          <div className="sectionHeader">
+            <h2>Everything In One Workflow</h2>
+            <p>
+              Unified support automation built for modern ecommerce brands.
+            </p>
+          </div>
+
+          <div className="featuresGrid">
+
+            <div className="card">
+              <h3>WhatsApp Automation</h3>
+              <p>
+                Automatically answer common support questions.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Instagram DMs</h3>
+              <p>
+                Handle customer conversations instantly.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Email Support</h3>
+              <p>
+                Reduce repetitive email responses.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Order Tracking</h3>
+              <p>
+                Provide shipment updates automatically.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Refund Assistance</h3>
+              <p>
+                Explain refund and return policies instantly.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Human Escalation</h3>
+              <p>
+                Transfer complex cases to human agents.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* Workflow */}
+      <section id="workflow">
+        <div className="container center">
+
+          <h2>How It Works</h2>
+
+          <div className="workflow">
+
+            <div className="workflowCard">
+              Customer Message
+            </div>
+
+            <div className="arrow">→</div>
+
+            <div className="workflowCard">
+              AI Processing
+            </div>
+
+            <div className="arrow">→</div>
+
+            <div className="workflowCard">
+              Instant Response
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section id="contact">
+        <div className="container">
+
+          <div className="cta">
+
+            <h2>
+              Ready To Automate Customer Support?
+            </h2>
+
+            <p>
+              Let's discuss your workflow and discover automation
+              opportunities.
+            </p>
+
+            <a
+              href="mailto:aditya@kryoto.in"
+              className="btn"
+            >
+              Schedule Demo
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <div className="container footer">
+          <div>
+            <h3>KRYOTO</h3>
+            <p>
+              AI Automation For Ecommerce Businesses
+            </p>
+          </div>
+
+          <div>
+            <p>aditya@kryoto.in</p>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
